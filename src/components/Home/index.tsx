@@ -1,4 +1,5 @@
 import { useEffect, useState } from "preact/hooks";
+import pinterest from "../../assets/pinterest.svg"
 
 type FooterProps = {};
 function Footer({}: FooterProps) {
@@ -32,7 +33,7 @@ function Footer({}: FooterProps) {
         show ? "translate-y-0" : "translate-y-full"
       } animate-flicker mix-blend-overlay`}
     >
-      <img src='src/assets/pinterest.svg'className='sm:w-[10vw] w-[8vh]'/>
+      <img src={pinterest} className='sm:w-[10vw] w-[8vh]'/>
       <p className='sm:text-[10vw] text-[8vh] font-thin'>Pinterest</p>
     </nav>
   );
